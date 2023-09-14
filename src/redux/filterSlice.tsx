@@ -49,10 +49,10 @@ export const filterSlice = createSlice({
         } else if (groupField == "") {
           state.value = searchedResults;
         } else {
-          toast("Not Found According To Group Criteria");
+          toast("Not Found Data To Group Criteria");
         }
       } else {
-        toast("Not Found According To Search Criteria");
+        toast("Not Found Data To Search Criteria");
       }
     },
   },
