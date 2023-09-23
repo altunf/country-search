@@ -42,7 +42,7 @@ export const filterSlice = createSlice({
       const groupedResults = searchedResults.filter((el: Countries) =>
         el.continent.name.toLowerCase().includes(groupField.toLowerCase())
       );
-      console.log(groupedResults, searchedResults);
+
       if (searchedResults?.length > 0) {
         if (groupedResults?.length > 0) {
           state.value = groupedResults;
